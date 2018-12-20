@@ -1,0 +1,4 @@
+#!/bin/sh
+
+chown hab:hab "{{ pkg.svc_static_path }}"
+cp -a {{pkg.path}}/static/* {{ pkg.svc_static_path }}
